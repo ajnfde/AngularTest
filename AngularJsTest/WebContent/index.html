@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>AngularJs Test App</title>
+       <script type="text/javascript" src="js/angular.min.js"></script>
+       <script type="text/javascript" src="js/appModel.js"></script>
+       <script type="text/javascript" src="js/appController.js"></script>
+   </head>
+   
+   <body ng-app="testApp" ng-controller="ctrl">
+      <h1>Login Form</h1> <hr>
+      <form action="next.html" ng-submit="authentification($event)">
+          Username : <input name="username" ng-model="uname"><div style="color:red;">{{msg1}}</div> <br>
+          
+          Password : <input name="pwd" type="password" ng-model="pwd"><div style="color: red;">{{msg2}}</div><br>
+          
+          <input type="submit" value="login">
+      </form>
+   </body>
+</html>
